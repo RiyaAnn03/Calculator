@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./cal.css">
+
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+
+    <p>CASIO</p>
+    <input type="text" placeholder="0 " id="result"  class="form-control" readonly  >
+    <br>
+    <input onclick="removelastDigit()"  type="text" class="button number" type="button" value="  &#9003">
+    <input onclick="displayContent()"  type="text" class="button number"type="button" value=" ON">
+    <input onclick=" calScreenClear()" type="text" class="button clear" type="button" value=" C">
+    <input onclick="displayContent('/')"  type="text" class="button operator"type="button" value="  /">
+    <br>
+    <input onclick="displayContent('7')" type="text" class="button number" type="button" value="  7">
+    <input onclick="displayContent('8')" type="text" class="button number"type="button" value="  8">
+    <input onclick="displayContent('9')" type="text" class="button number" type="button" value="  9">
+    <input onclick="displayContent('*')" type="text" class="button operator"type="button" value="  *">
+<br>
+    <input onclick="displayContent('4')" type="text" class="button number" type="button" value="  4">
+    <input onclick="displayContent('5')" type="text" class="button number"type="button" value="  5">
+    <input onclick="displayContent('6')" type="text" class="button number" type="button" value="  6">
+    <input onclick="displayContent('-')"  type="text" class="button operator"type="button" value="  -">
+    <br>
+    <input onclick="displayContent('1')" type="text" class="button number" type="button" value="  1">
+    <input onclick="displayContent('2')" type="text" class="button number"type="button" value="  2">
+    <input onclick="displayContent('3')"   type="text" class="button number" type="button" value="  3">
+    <input onclick="displayContent('+')"  type="text" class="button operator"type="button" value="  +">
+    <br>
+     <input onclick="displayContent('0')"  type="text" class="button number" type="button" value="  0">
+    <input onclick="displayContent('.')"  type="text" class="button number"type="button" value="  .">
+    <input   type="text" class="button number" type="button" value=" exp">
+    <input onclick=" calOutput() "  type="text" class="button result"type="button" value="  =">
+   
+ </div>
+    
+</body>
+<script src="./main.js">
+
+</script>
+</html>
